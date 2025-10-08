@@ -1,0 +1,55 @@
+.contact {
+  background-color: rgb(29, 36, 61);
+  padding: max(45px, 4%);
+  padding-left: max(45px, 10%);
+  display: grid;
+  gap: 25px;
+  column-gap: 150px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.contact-title {
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  font-size: clamp(1.8rem, 2.3vw, 4rem);
+}
+
+.contact-title-description {
+  color: rgb(177, 185, 204);
+  font-weight: 500;
+  margin-bottom: 5vh;
+  font-size: clamp(1rem, 1.2vw, 2rem);
+  margin-bottom: 10px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: max(15px, 12%);
+  align-items: left;
+  justify-content: center;
+}
+
+.contact-link {
+  color: rgb(151, 163, 193);
+  font-size: clamp(1.1rem, 1.2vw, 2rem);
+  transition: color 0.18s;
+  align-items: center;
+  display: flex;
+}
+
+.contact-link:hover {
+  color: rgb(221, 227, 243);
+  cursor: pointer;
+}
+
+.contact-link:active {
+  color: rgb(203, 223, 241);
+}
+
+.social-media-icon {
+  margin-right: 20px;
+  width: 40px;
+  object-fit: cover;
+  object-position: center;
+}

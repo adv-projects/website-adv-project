@@ -1,0 +1,27 @@
+html, body {
+  margin: 0px;
+  overflow-x: hidden;
+  overscroll-behavior-y: none;
+}
+
+body {
+  margin-top: 90px;
+}
+
+div {
+  margin: 0px;
+  font-family: "Exo 2", Arial;
+  color: rgb(29, 36, 61);
+  line-height: 1.5;
+}
+
+a {
+  font-family: "Exo 2", Arial;
+  color: rgb(29, 36, 61);
+  text-decoration: none;
+}
+
+p {
+  font-family: "Exo 2", Arial;
+  color: rgb(29, 36, 61);
+}

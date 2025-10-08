@@ -1,0 +1,63 @@
+.get-started {
+  padding-bottom: max(50px, 5%);
+  padding-top: 0px;
+  padding-left: 12vw;
+  padding-right: 12vw;
+}
+
+.get-started-title {
+  color: rgb(29, 59, 101);
+  font-size: clamp(2rem, 2.5vw, 3rem);
+  line-height: 1.25;
+  font-weight: bolder;
+  margin-bottom: max(25px, 4%);
+}
+
+.get-started-steps {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2vw;
+  row-gap: max(25px, 8vh);
+}
+
+.get-started-step {
+  position: relative;
+}
+
+.get-started-description {
+  position: relative;
+  z-index: 2;
+  display: flex;
+}
+
+.get-started-circle {
+  border-radius: 50%;
+  border-style: none;
+  background-color: rgb(61, 107, 170);
+  box-shadow: 0 0 10px rgba(25, 50, 85, 0.3);
+  height: 17vw;
+  max-height: 90px;
+  width: 17vw;
+  max-width: 90px;
+  margin-right: max(15px, 3%);
+  flex-shrink: 0;
+
+  color: white;
+  font-family: "Do Hyeon", Arial;
+  font-weight: bolder;
+  font-size: clamp(1.5rem, 2.5vw, 3rem);
+}
+
+.step-title {
+  font-weight: bold;
+  color: rgb(43, 80, 132);
+  font-size: clamp(1.25rem, 1.5vw, 2rem);
+  margin-top: 0px;
+  margin-bottom: max(5px, 1%);
+}
+
+.step-description {
+  color: rgb(61, 107, 170);
+  font-size: clamp(1rem, 1.2vw, 2rem);
+  margin: 0px;
+}

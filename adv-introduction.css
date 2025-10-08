@@ -1,0 +1,19 @@
+.adv-introduction {
+  padding-top: 10vh;
+  padding-left: 12vw;
+  padding-right: 12vw;
+  padding-bottom: 0px;
+}
+
+.adv-introduction-title {
+  font-size: clamp(2rem, 2.8vw, 5rem);
+  line-height: 1.25;
+  font-weight: bolder;
+  margin-bottom: 4vh;
+  color: rgb(29, 59, 101);
+}
+
+.adv-introduction-description {
+  font-size: clamp(1rem, 1.4vw, 1.5rem);
+  color: rgb(43, 80, 132);
+}

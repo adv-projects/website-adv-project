@@ -1,0 +1,43 @@
+.header {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  padding-left: 4vw;
+  padding-right: 3vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+}
+
+.ADV-logo {
+  margin: max(10px, 1%);
+  margin-top: max(12px, 1.5%);
+  margin-left: max(12px, 4%);
+  height: max(80px, 7vw);
+  object-position: bottom;
+}
+
+.header-links {
+  margin-right: 3vw;
+}
+
+.header-link {
+  margin: 2vw;
+  font-size: clamp(1.2rem, 1.6vw, 3rem);
+  color: rgb(28, 64, 115);
+  font-weight: bolder;
+  transition: color 0.2s;
+}
+
+.header-link:hover {
+  cursor: pointer;
+  color: rgb(82, 143, 228);
+}
+
+.header-link:active {
+  color: rgb(28, 64, 115);
+}

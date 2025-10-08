@@ -1,0 +1,84 @@
+.adv-goals {
+  padding: max(10px, 2%);
+  padding-bottom: max(50px, 5%);
+  padding-left: 12vw;
+  padding-right: 12vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  column-gap: max(30px, 5%);
+  row-gap: max(15px, 1%);
+  align-items: center;
+}
+
+.goal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.goal-title {
+  margin-bottom: 5px;
+  margin-top: 0px;
+  font-weight: bold;
+  font-size: clamp(1.2rem, 1.8vw, 2rem);
+  color: rgb(43, 80, 132);
+}
+
+.goal-display {
+  position: relative;
+}
+
+.goal-illustration {
+  border-radius: 20px;
+  aspect-ratio: 5/3;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: opacity 0.8s;
+  opacity: 1;
+}
+
+.goal-description-advertise, .goal-description-advise, .goal-description-advance {
+  border-radius: 20px;
+  aspect-ratio: 5/3;
+  width: 100%;
+  inset: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: clamp(1rem, 1.2vw, 1.5rem);
+  transition: opacity 0.45s ease;
+  opacity: 0;
+  text-align: center;
+}
+
+.goal-description-advertise {
+  background-color: rgb(135, 131, 186);
+  color: rgb(61, 58, 112);
+}
+
+.goal-description-advise {
+  background-color: rgb(224, 225, 252);
+  color: rgb(101, 104, 189);
+}
+
+.goal-description-advance {
+  background-color: rgb(184, 197, 236);
+  color: rgb(109, 132, 202);
+}
+
+.goal-display:hover .goal-description-advertise,
+.goal-display:hover .goal-description-advise, 
+.goal-display:hover .goal-description-advance {
+  opacity: 0;
+}
+
+.goal-display:hover .goal-description-advertise,
+.goal-display:hover .goal-description-advise, 
+.goal-display:hover .goal-description-advance {
+  opacity: 1;
+}
