@@ -17,7 +17,7 @@
   margin: max(10px, 1%);
   margin-top: max(12px, 1.5%);
   margin-left: max(12px, 4%);
-  height: max(80px, 7vw);
+  height: max(80px, 6vw);
   object-position: bottom;
 }
 
@@ -26,11 +26,29 @@
 }
 
 .header-link {
+  position: relative;
   margin: 2vw;
   font-size: clamp(1.2rem, 1.6vw, 3rem);
   color: rgb(28, 64, 115);
   font-weight: bolder;
-  transition: color 0.2s;
+  transition: color 0.2s,;
+}
+
+.header-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background: rgb(82, 143, 228);
+  transition: width 0.5s ease, left 0.5s ease;
+  transform: translateX(-50%);
+}
+
+.header-link:hover::after {
+  width: 100%;
+  left: 50%;
 }
 
 .header-link:hover {
